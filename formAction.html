@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Pesquisa | Animais de Estimação</title>
+    <meta name="description" content="Visualize os resultados da pesquisa sobre animais de estimação e compare com outros participantes.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="form.html">Pesquisa</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Resultados da Pesquisa</h1>
+        <section id="userResults">
+            <h2>Seus Resultados</h2>
+            <div id="results"></div>
+        </section>
+        
+        <section id="charts">
+            <h2>Gráficos Comparativos</h2>
+            <div id="ageChart" aria-label="Gráfico de idade dos participantes"></div>
+            <div id="petOwnershipChart" aria-label="Gráfico de posse de animais de estimação"></div>
+        </section>
+        
+        <section id="otherParticipants">
+            <h2>Resultados de Outros Participantes</h2>
+            <div id="otherResults"></div>
+            <button id="showMoreResults" class="button">Mostrar Mais Resultados</button>
+        </section>
+        
+        <a href="index.html" class="button">Voltar à Página Inicial</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesquisa de Animais de Estimação. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/main.js"></script>
+    <script src="js/formHandler.js"></script>
+</body>
+</html>

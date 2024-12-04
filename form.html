@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa | Animais de Estimação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="form.html">Pesquisa</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulário de Pesquisa</h1>
+        <form id="petForm" action="formAction.html" method="GET">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" min="1" max="120" required>
+            </div>
+            <div class="form-group">
+                <label for="hasPets">Possui animais de estimação?</label>
+                <select id="hasPets" name="hasPets" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <div class="form-group" id="petCountGroup" style="display: none;">
+                <label for="petCount">Quantos?</label>
+                <input type="number" id="petCount" name="petCount" min="1" max="50">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <a href="index.html" class="button">Voltar à Página Inicial</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesquisa de Animais de Estimação. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/formHandler.js"></script>
+</body>
+</html>
